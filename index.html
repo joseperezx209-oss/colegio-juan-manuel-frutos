@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colegio Nacional Dr. Juan Manuel Frutos</title>
+
+    <link rel="stylesheet" 
+    href="style.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="escudo.png" alt="Escudo">
+
+
+        <div>
+
+            <h2>Colegio Nacional</h2>
+
+            <span>Dr. Juan Manuel Frutos</span>
+
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#historia">Historia</a>
+
+        <a href="#explora">Explorar</a>
+        
+        <a href="#niveles">Niveles</a>
+
+        <a href="#galeria">Galería</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="buscador">
+    <input 
+        type="text" 
+        id="busqueda" 
+        placeholder="Buscar..."
+        onkeyup="buscarSitio()"
+    >
+    <button onclick="buscarSitio()">🔍</button>
+</div>
+
+
+</header>
+
+<section class="hero" id="inicio">
+
+    <div class="overlay"></div>
+
+    <div class="contenido">
+
+        <h1>¡Bienvenidos!</h1>
+
+        <p>
+
+            Sitio Web Oficial del
+
+            <strong>Colegio Nacional Dr. Juan Manuel Frutos</strong>
+
+        </p>
+
+        <a href="#historia" class="boton">
+
+            Conocer más
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="elegirnos">
+
+    <div class="titulo-seccion">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="linea"></div>
+        <p>Comprometidos con una educación de calidad para formar el futuro.</p>
+    </div>
+
+    <div class="elegirnos-grid">
+
+        <div class="elegir-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Excelencia Académica</h3>
+            <p>Educación de calidad con docentes comprometidos y preparados.</p>
+        </div>
+
+        <div class="elegir-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Formación en Valores</h3>
+            <p>Promovemos el respeto, la responsabilidad y el trabajo en equipo.</p>
+        </div>
+
+        <div class="elegir-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Innovación</h3>
+            <p>Incorporamos tecnología y nuevas herramientas para el aprendizaje.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="inicio-info">
+
+    <div class="tarjeta">
+
+        <i class="fa-solid fa-book-open icono"></i>
+
+        <h2>Historia del Colegio</h2>
+
+        <div class="linea"></div>
+
+        <p>
+            Nuestra institución nació con el compromiso de brindar educación de calidad,
+            formando jóvenes con valores, responsabilidad y excelencia académica.
+            A lo largo de los años ha crecido hasta convertirse en una institución
+            reconocida en Mariano Roque Alonso.
+        </p>
+
+    </div>
+
+
+    <div class="tarjeta">
+
+        <i class="fa-solid fa-users icono"></i>
+
+        <h2>Información de Docentes</h2>
+
+        <div class="linea"></div>
+
+        <p>☀️ Turno Mañana: 43 docentes</p>
+
+        <p>🌤️ Turno Tarde: 43 docentes</p>
+
+        <p>🌙 Turno Noche: 43 docentes</p>
+
+    </div>
+
+    <div class="tarjeta">
+
+        <i class="fa-solid fa-bullseye icono"></i>
+
+        <h2>Misión</h2>
+
+        <div class="linea"></div>
+
+        <p>
+            Brindar una educación de calidad, formando estudiantes competentes,
+            con valores éticos y humanos, comprometidos con su comunidad.
+        </p>
+
+    </div>
+
+    <div class="tarjeta">
+
+        <i class="fa-solid fa-eye icono"></i>
+
+        <h2>Visión</h2>
+
+        <div class="linea"></div>
+
+        <p>
+            Ser una institución educativa reconocida por su excelencia académica,
+            innovación y formación integral de sus estudiantes.
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+     EXPLORA NUESTRO COLEGIO
+========================= -->
+
+<section class="explora" id="explora">
+
+    <div class="titulo-seccion">
+        <h2>Explora nuestro colegio</h2>
+        <p>
+            Conoce más sobre nuestra institución, nuestra comunidad
+            educativa y la formación que ofrecemos.
+        </p>
+    </div>
+
+    <div class="explora-contenedor">
+
+        <div class="explora-card">
+            <div class="explora-icono">🏫</div>
+            <h3>Nuestra institución</h3>
+            <p>
+                Conoce nuestra historia, misión, visión y los valores
+                que representan al colegio.
+            </p>
+            <a href="#historia">Conocer más</a>
+        </div>
+
+        <div class="explora-card">
+            <div class="explora-icono">👨‍🏫</div>
+            <h3>Comunidad educativa</h3>
+            <p>
+                Conoce información sobre nuestros docentes y la
+                comunidad que forma parte de la institución.
+            </p>
+            <a href="#informacion">Ver información</a>
+        </div>
+
+        <div class="explora-card">
+            <div class="explora-icono">📸</div>
+            <h3>Vida estudiantil</h3>
+            <p>
+                Mira fotografías de actividades, eventos y momentos
+                importantes de nuestra comunidad educativa.
+            </p>
+            <a href="#galeria">Ver galería</a>
+        </div>
+
+        <div class="explora-card">
+            <div class="explora-icono">🏆</div>
+            <h3>Nuestros logros</h3>
+            <p>
+                Destacamos el esfuerzo, la participación y los logros
+                alcanzados por nuestros estudiantes.
+            </p>
+            <a href="#noticias">Ver novedades</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="niveles" id="niveles">
+
+    <div class="titulo-seccion">
+        <h2>Nuestros Niveles</h2>
+        <div class="linea"></div>
+    </div>
+
+    <div class="niveles-grid">
+
+        <div class="nivel-card">
+
+            <h3>📘 Educación Escolar Básica</h3>
+
+            <p>
+                7.º, 8.º y 9.º grado.
+            </p>
+
+            <p>
+                Turnos: Mañana y Tarde.
+            </p>
+
+        </div>
+
+        <div class="nivel-card">
+
+            <h3>🎓 Nivel Medio</h3>
+
+            <ul>
+
+                <li>✔ Bachillerato Técnico en Informática</li>
+
+                <li>✔ Bachillerato Técnico en Contabilidad</li>
+
+                <li>✔ Bachillerato Técnico en Marketing</li>
+
+                <li>✔ Bachillerato Científico en Ciencias Sociales</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="estadisticas" id="estadisticas">
+
+    <div class="titulo-seccion">
+        <h2>Estadísticas del Colegio</h2>
+        <div class="linea"></div>
+    </div>
+
+    <div class="estadisticas-grid">
+
+        <div class="stat-card azul">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3 class="contador" data-target="1500">0</h3>
+            <p>Alumnos</p>
+        </div>
+
+        <div class="stat-card dorado">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h3 class="contador" data-target="129">0</h3>
+            <p>Docentes</p>
+        </div>
+
+        <div class="stat-card azul">
+            <i class="fa-solid fa-school"></i>
+            <h3>3</h3>
+            <p>Turnos</p>
+        </div>
+
+        <div class="stat-card dorado">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>4</h3>
+            <p>Especialidades</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+    <div class="titulo-seccion">
+        <h2>Contacto y Ubicación</h2>
+        <div class="linea"></div>
+    </div>
+
+    <div class="contacto-grid">
+
+        <div class="contacto-info">
+
+            <h3>📍 Dirección</h3>
+            <p>Boquerón e Ingavi, Mariano Roque Alonso, Paraguay.</p>
+
+            <h3>📞 Teléfono</h3>
+            <p>(021) 752 218</p>
+
+            <h3>📧 Correo</h3>
+            <p>cn.jmf24@gmail.com</p>
+
+            <h3>🕒 Horario</h3>
+            <p>Lunes a Viernes</p>
+            <p>07:00 a 20:00</p>
+
+        </div>
+
+        <div class="mapa">
+
+            <iframe
+                src="https://www.google.com/maps?q=Boquerón+e+Ingavi,+Mariano+Roque+Alonso&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;border-radius:15px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="noticias" id="noticias">
+
+    <div class="titulo-seccion">
+
+        <h2>Noticias y Avisos</h2>
+
+        <div class="linea"></div>
+
+        <p>
+            Mantente informado sobre las actividades y novedades de nuestra institución.
+        </p>
+
+    </div>
+
+
+    <div class="noticias-grid">
+
+
+        <div class="noticia-card">
+
+            <div class="noticia-img">
+                🏫
+            </div>
+
+            <div class="noticia-contenido">
+
+                <h3>Inicio del Año Lectivo 2026</h3>
+
+                <p>
+                    Información importante sobre el inicio de clases,
+                    horarios y organización académica.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="noticia-card">
+
+            <div class="noticia-img">
+                🎓
+            </div>
+
+            <div class="noticia-contenido">
+
+                <h3>Actividades Estudiantiles</h3>
+
+                <p>
+                    Conoce los proyectos, eventos y actividades
+                    realizadas por nuestros estudiantes.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="noticia-card">
+
+            <div class="noticia-img">
+                📚
+            </div>
+
+            <div class="noticia-contenido">
+
+                <h3>Inscripciones</h3>
+
+                <p>
+                    Información para estudiantes que desean formar
+                    parte de nuestra institución.
+                </p>
+
+                <a href="#">Leer más</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<section class="galeria" id="galeria">
+
+    <div class="titulo-seccion">
+        <h2>Galería Institucional</h2>
+        <div class="linea"></div>
+        <p>Conoce algunos espacios y actividades de nuestra institución.</p>
+    </div>
+
+    <div class="galeria-grid">
+
+        <img src="colegio1.png" alt="Colegio">
+        <img src="colegio2.png" alt="Colegio">
+        <img src="colegio3.png" alt="Colegio">
+        <img src="colegio4.png" alt="Colegio">
+        <img src="colegio5.png" alt="Colegio">
+        <img src="colegio6.png" alt="Colegio">
+
+    </div>
+
+</section>
+
+<button id="volverArriba">
+    ↑
+</button>
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>Colegio Nacional Dr. Juan Manuel Frutos</h3>
+
+            <p>
+                Formando jóvenes con excelencia académica,
+                responsabilidad y valores.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Contacto</h3>
+
+            <p>📍 Boquerón e Ingavi</p>
+
+            <p>📞 (021) 752 218</p>
+
+            <p>📧 cn.jmf24@gmail.com</p>
+
+        </div>
+
+        <div>
+
+            <h3>Síguenos</h3>
+
+            <div class="redes">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copy">
+        © 2026 Colegio Nacional Dr. Juan Manuel Frutos. Todos los derechos reservados.
+    </p>
+
+</footer>
+
+<!-- BOTÓN DE JUANMA -->
+
+<button id="juanma-boton" onclick="abrirChat()" aria-label="Abrir asistente Juanma">
+    🐶
+</button>
+
+
+<!-- CHATBOT -->
+
+<div id="chatbot">
+
+    <div id="chat-header">
+        🐶 Juanma
+        <button id="cerrar-chat" onclick="cerrarChat()">×</button>
+    </div>
+
+    <div id="chat-body">
+
+        <div class="mensaje-juanma">
+            🐶 ¡Hola! Soy Juanma.
+            <br><br>
+            Soy el guía virtual del Colegio Nacional Dr. "Juan Manuel Frutos".
+            <br><br>
+            ¿Qué quieres conocer?
+        </div>
+
+        <div class="opciones-juanma">
+
+            <button onclick="juanmaGuia('historia')">
+                🏫 Historia
+            </button>
+
+            <button onclick="juanmaGuia('niveles')">
+                🎓 Niveles
+            </button>
+
+            <button onclick="juanmaGuia('turnos')">
+                🕐 Turnos
+            </button>
+
+            <button onclick="juanmaGuia('galeria')">
+                📸 Galería
+            </button>
+
+            <button onclick="juanmaGuia('ubicacion')">
+                📍 Ubicación
+            </button>
+
+            <button onclick="juanmaGuia('contacto')">
+                📞 Contacto
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+
+<button id="volverArriba" onclick="volverArriba()" aria-label="Volver arriba">
+    ↑
+</button>
+
+<a 
+href="https://wa.me/595XXXXXXXXX" 
+target="_blank" 
+class="whatsapp-btn">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+</body>
+
+</html>
